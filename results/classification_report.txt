@@ -1,0 +1,26 @@
+=================================================================
+MNIST CNN MODEL CLASSIFICATION REPORT
+=================================================================
+
+              precision    recall  f1-score   support
+
+           0     0.9889    0.9980    0.9934       980
+           1     0.9947    0.9956    0.9952      1135
+           2     0.9884    0.9913    0.9898      1032
+           3     0.9892    0.9960    0.9926      1010
+           4     0.9869    0.9959    0.9914       982
+           5     0.9899    0.9899    0.9899       892
+           6     0.9979    0.9843    0.9911       958
+           7     0.9893    0.9874    0.9883      1028
+           8     0.9938    0.9897    0.9918       974
+           9     0.9900    0.9802    0.9851      1009
+
+    accuracy                         0.9909     10000
+   macro avg     0.9909    0.9908    0.9908     10000
+weighted avg     0.9909    0.9909    0.9909     10000
+
+
+=================================================================
+WHY TEST SET MUST REMAIN SEPARATE:
+=================================================================
+In rigorous Machine Learning methodology, the test dataset must remain strictly separated and untouched throughout all training and hyperparameter tuning phases. While the training set optimizes network weights via gradient descent and the validation set guides architectural choices and early stopping, the test set serves as an unbiased proxy for real-world unseen data. Exposing test data during training causes data leakage, leading to over-optimistic metric estimates that fail during real-world inference.

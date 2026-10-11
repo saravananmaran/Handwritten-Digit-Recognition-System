@@ -1,0 +1,14 @@
+{
+    "test_loss": 0.026736648753285408,
+    "test_accuracy": 0.9908999800682068,
+    "precision_macro": 0.9908944659934592,
+    "recall_macro": 0.9908317484763005,
+    "f1_score_macro": 0.9908499752830036,
+    "precision_weighted": 0.990916014276438,
+    "recall_weighted": 0.9909,
+    "f1_score_weighted": 0.9908951132788023,
+    "total_test_samples": 10000,
+    "correct_predictions": 9909,
+    "misclassifications": 91,
+    "rationale_test_split": "In rigorous Machine Learning methodology, the test dataset must remain strictly separated and untouched throughout all training and hyperparameter tuning phases. While the training set optimizes network weights via gradient descent and the validation set guides architectural choices and early stopping, the test set serves as an unbiased proxy for real-world unseen data. Exposing test data during training causes data leakage, leading to over-optimistic metric estimates that fail during real-world inference."
+}
